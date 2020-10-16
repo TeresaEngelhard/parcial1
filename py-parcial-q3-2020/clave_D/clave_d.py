@@ -111,6 +111,7 @@ Computadora
 
 class VentaComputadoras:
     def orden(self):
+        computadora=0
         listaComputadora = []
         computadora[0] = dict(procesador="intel", ram="16gb", tarjeta="nvidia", ssd="240gb", costo=700.0, conDescuento="false", descuento=0.0, conPlazo="false", cuota=0.0)
         computadora[1] = dict(procesador="amd", ram="16gb", tarjeta="nvidia", ssd="512gb", costo=750.0, conDescuento="True", descuento=20.0, conPlazo="false", cuota=0.0)
