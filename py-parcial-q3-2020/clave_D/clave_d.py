@@ -111,7 +111,18 @@ Computadora
 
 class VentaComputadoras:
     def orden(self):
-        computadora1Dict = {"procesador": intel, "ram": 16gb, "tarjeta": nvidia, "disco": 240gb, "precio": 700.0}
+        listaComputadora = []
+        computadora[0] = dict(procesador="intel", ram="16gb", tarjeta="nvidia", ssd="240gb", costo=700.0, conDescuento="false", descuento=0.0, conPlazo="false", cuota=0.0)
+        computadora[1] = dict(procesador="amd", ram="16gb", tarjeta="nvidia", ssd="512gb", costo=750.0, conDescuento="True", descuento=20.0, conPlazo="false", cuota=0.0)
+        computadora[2] = dict(procesador="intel", ram="8gb", tarjeta="nvidia", ssd="240gb", costo=700.0, conDescuento="false", descuento=0.0, conPlazo="false", cuota=0.0)
+        computadora[3] = dict(procesador="amd", ram="16gb", tarjeta="nvidia", ssd="512gb", costo=700.0, conDescuento="True", descuento=50.0, conPlazo="false", cuota=0.0)
+        computadora[4] = dict(procesador="intel", ram="16gb", tarjeta="nvidia", ssd="1Tb", costo=700.0, conDescuento="True", descuento=70.0, conPlazo="false", cuota=0.0)
+        computadora[5] = dict(procesador="intel", ram="32gb", tarjeta="nvidia", ssd="2Tb", costo=900.0, conDescuento="false", descuento=0.0, conPlazo="false", cuota=0.0)
+
+        i=0
+        while i<=5:
+            listaComputadora.append(computadora[i])
+
         pass
 
     def totalProcesadorIntel(self):
@@ -137,4 +148,4 @@ github_<nombre>_<codigo>.txt y subirlo a moodle
 
 # github url-->
 def getGithubUrl():
-    return ""
+    return "https://github.com/TeresaEngelhard/parcial1"
